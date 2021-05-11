@@ -535,7 +535,7 @@ if (Array.isArray(assistSearchList)) {
   });
 }</script><script src="https://cdn.jsdelivr.net/gh/sukkaw/busuanzi@latest/bsz.pure.mini.js" async></script><script src="https://cdn.jsdelivr.net/npm/leancloud-storage@latest/dist/av-min.js"></script><script src="https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"></script><script>function loadValine () {
   var GUEST_INFO = ['nick', 'mail', 'link'];
-  var guest_info = 'nick,mail,link';
+  var guest_info = '张三,zhangsan@liayun.com,link';
 
   guest_info = guest_info.split(',').filter(function(item) {
     return GUEST_INFO.indexOf(item) > -1;
@@ -546,12 +546,12 @@ if (Array.isArray(assistSearchList)) {
     appKey: 'Fzan1Nk64WumXKM0IIlD9oMw',
     notify: true,
     verify: true,
-    placeholder: 'Just go go',
+    placeholder: '有本事你说两句啊 ~ ~',
     avatar: 'mp',
     meta: guest_info,
     pageSize: '10' || 10,
     visitor: false,
-    recordIP: false,
+    recordIP: true,
     lang: 'zh-cn' || 'zh-cn',
     path: window.location.pathname
   });
